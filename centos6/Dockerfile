@@ -1,7 +1,5 @@
 FROM centos:6
 
-WORKDIR /tmp
-
 RUN yum -y install epel-release vim telnet wget man yumdownloader
 
 RUN curl https://bootstrap.pypa.io/get-pip.py | python && pip install awscli
